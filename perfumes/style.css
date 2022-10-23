@@ -1,0 +1,201 @@
+:root {
+    
+
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Darkgreen: #22493b    ;
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --font: font-family: 'Montserrat', sans-serif;
+    --font2: font-family: 'Fraunces', serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    } 
+
+    html {
+        text-align: left;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        min-height: 100vh;
+        background-color: var(--Cream);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Main Card */
+
+    .container {
+        background-color: var(--White);
+        align-items: center;
+        align-items: center;
+        width: 350px;
+        padding: 15px     15px 15px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+
+
+    .main-card-image-layout {
+        display: flex;
+        flex-direction: column; 
+        overflow: hidden;
+        height: 200px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px ;
+        margin: 0;
+    }
+
+   
+
+    .main-card-textspace {
+        
+        width: 300px;
+        height: 400px;
+        background-color: var(--White);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .main-card-text {
+        padding: 0px 10px;
+        font-weight: 900;
+        font-family: 'Fraunces', serif;
+    }
+
+    .main-card-textp {
+        padding: 20px  13px  10px;
+        letter-spacing: 5px;
+        font-size: 10px;
+        text-transform: uppercase;
+        text-align: left;
+        color: var(--Darkgrayishblue);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .main-card-texth1 {
+        margin: auto;
+        padding: .3px 11px 1px;
+    }
+
+    .main-card-desc {
+        color: var(--Darkgrayishblue);
+        padding: 5px 10px  1px 20px;
+        text-align: left;
+    }
+
+    .main-card-textpdesc {
+        padding: 5px 20px  0px 10px;
+    }
+
+    .main-card-product-price {
+        display: flex;
+        gap: 1rem;
+        color: var(--Darkcyan);
+        padding: 20px 20px 1px;
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: none;
+        text-align: left;
+        font-family: 'Fraunces', serif;
+    }
+
+    .span {
+        font-size: 15px;
+        text-decoration: line-through;
+        color: var(--Darkgrayishblue);
+    }
+
+    
+
+    .add-to-cart-btn {
+        letter-spacing: 1px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 20px 0px 0px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        background-color: var(--Darkcyan);
+        color: var(--White);
+        padding: 5%;
+    }
+
+    .add-to-cart-btn:hover {
+        cursor: pointer;
+        background-color: var(--Darkgreen);
+    }
+
+    .main-card-image-desktop {
+        display: none;
+    }
+
+
+
+
+    /* Media Queries */
+
+    @media (min-width: 768px) {
+        .container {
+            display: flex;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 16px;
+            border-top-right-radius: 16px;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            text-align: left;
+        }
+    }
+    
+
+    @media (min-width: 768px) {
+        .main-card-image-layout {
+            display: none;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .main-card-image-desktop {
+            display: flex;
+            flex-direction: column;
+            width: 287px;
+            
+            
+           
+        }
+    }
+
+    @media (min-width: 768px) {
+        .main-card-image-desktop1 {
+            border-bottom-left-radius: 16px;
+            border-top-left-radius: 16px;
+        }
+    }
+
+    
+   
+
+    
+    
+
+    
